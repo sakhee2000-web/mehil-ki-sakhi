@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#b85f7c">
+<title>Sakhi & Mehil — Our Little Story ❤️</title>
+<style>
+:root{--bg:#fbf5f6;--card:#fffafb;--text:#33252b;--muted:#806b73;--accent:#b85f7c;--accent2:#d98ca5;--accent-bg:#f5dce5;--border:#ead9de}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at top,#fff,#faeef2 60%,#f7e8ed);color:var(--text);font-family:Georgia,"Times New Roman",serif}
+.app{width:min(100%,720px);margin:auto;padding:22px 18px 48px;text-align:center;min-height:100vh}
+.screen{display:none;min-height:650px;align-items:center;justify-content:center;flex-direction:column}.screen.active{display:flex;animation:appear .65s ease}
+@keyframes appear{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.eyebrow{font-family:system-ui,sans-serif;letter-spacing:.17em;text-transform:uppercase;font-size:10px;color:var(--muted)}
+h1,h2,h3{font-weight:500;letter-spacing:-.025em}h1{font-size:clamp(36px,9vw,56px);line-height:1.08;margin:.55em 0}h2{font-size:clamp(29px,7vw,42px);line-height:1.12;margin:.55em 0}p{max-width:540px;line-height:1.78}
+.heart{font-size:74px;line-height:1;color:var(--accent);animation:beat 1.8s infinite}@keyframes beat{50%{transform:scale(1.08)}}
+.card{width:100%;max-width:540px;background:rgba(255,250,251,.9);border:1px solid var(--border);border-radius:28px;padding:25px;box-shadow:0 14px 40px rgba(70,35,45,.08)}
+.grid{display:grid;gap:12px;width:100%;max-width:540px}.btn{width:100%;min-height:55px;border:1px solid var(--border);border-radius:18px;background:#fff;color:var(--text);padding:14px 18px;font:500 15px system-ui,sans-serif;cursor:pointer;transition:transform .18s,background .18s}.btn:hover{background:#fff5f7}.btn:active{transform:scale(.98)}.primary{background:var(--accent-bg);border-color:transparent}
+.photo{height:310px;border-radius:22px;background:#f1e5e8;display:flex;align-items:center;justify-content:center;overflow:hidden}.photo img{width:100%;height:100%;object-fit:cover}
+.timeline{display:grid;gap:22px;text-align:left}.timeline-item{background:#fff;border:1px solid var(--border);border-radius:22px;overflow:hidden;box-shadow:0 8px 24px rgba(70,35,45,.05)}.timeline-photo{width:100%;height:330px;background:#f1e5e8;overflow:hidden}.timeline-photo img{width:100%;height:100%;object-fit:cover}.timeline-copy{padding:17px 18px 19px}.timeline-number{font:700 10px system-ui,sans-serif;letter-spacing:.16em;color:var(--accent);margin-bottom:5px}.timeline-copy h3{margin:0 0 5px;font-size:21px}.timeline-copy p{margin:0;color:var(--muted);font-size:14px;line-height:1.65}
+.envelope{font-size:82px;border:0;background:transparent;cursor:pointer;transition:transform .2s}.envelope:active{transform:scale(.94)}
+.letter{text-align:left;font-size:16px}.letter p{margin:0 0 15px}
+.choice-title{font-size:17px;margin-bottom:5px}.choice-sub{font-size:12px;font-family:system-ui,sans-serif;color:var(--muted)}
+.dots{display:flex;gap:6px;justify-content:center;margin-top:22px}.dot{width:6px;height:6px;border-radius:50%;background:#e5d7db}.dot.on{background:var(--accent)}
+.kids{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}.kid{border:1px solid var(--border);border-radius:20px;padding:14px 22px;background:#fff;font:500 15px system-ui,sans-serif;cursor:pointer}.kid:active{transform:scale(.98)}
+.reveal{min-height:90px;display:flex;align-items:center;justify-content:center;color:var(--muted)}
+.final-photo{display:block}
+.song-note{font-family:system-ui,sans-serif;font-size:12px;color:var(--muted);line-height:1.6}
+@media(max-width:500px){.screen{min-height:600px}.photo{height:250px}.timeline-photo{height:280px}}
+@media(prefers-reduced-motion:reduce){.screen.active{animation:none}.heart{animation:none}}
+
+.memories-collage{
+  display:block;
+  width:100%;
+  height:auto;
+  max-width:1100px;
+  margin:0 auto;
+  border-radius:22px;
+  object-fit:contain;
+}
+</style>
+</head>
+<body>
+<main class="app" id="app">
+
+<section class="screen active" id="s1">
+<div class="heart">♡</div>
+<div class="eyebrow">11 October • Sakhi & Mehil</div>
+<h1>Hey, kid…</h1>
+<p style="color:var(--muted)">Yes, you. Before you say anything — you have to play along.</p>
+<div class="grid"><button class="btn primary" data-go="s2">Okay, okay… I'm listening ❤️</button></div>
+<div class="dots"><i class="dot on"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i></div>
+</section>
+
+<section class="screen" id="s2">
+<div class="eyebrow">Question 01</div>
+<h2>Who is the bigger kid<br>in this relationship?</h2>
+<p style="color:var(--muted)">Choose carefully. This answer may be used against you later. 😌</p>
+<div class="kids">
+<button class="kid" data-go="s3">Sakhi 🧸</button>
+<button class="kid" data-go="s3">Mehil 🧸</button>
+<button class="kid" data-go="s3">Both of us 😭</button>
+</div>
+<div class="reveal">…</div>
+</section>
+
+<section class="screen" id="s3">
+<div class="eyebrow">Correct answer unlocked</div>
+<div class="heart">♥</div>
+<h2>Obviously… both.</h2>
+<p style="color:var(--muted)">Because somehow we decided that being each other's kid is just how we love each other.</p>
+<div class="card"><div class="photo"><img src="photos/memory-01.jpg" alt="Sakhi and Mehil together"></div>
+<h3>And it all started on a very random trip.</h3>
+<p style="color:var(--muted)">No grand plan. No idea where this would go. Just a random trip that somehow gave me you — and started three years of us.</p></div>
+<div class="grid"><button class="btn primary" data-go="s4">Tell me more →</button></div>
+<div class="dots"><i class="dot on"></i><i class="dot on"></i><i class="dot on"></i><i class="dot"></i><i class="dot"></i></div>
+</section>
+
+<section class="screen" id="s4">
+<div class="eyebrow">Our little story</div>
+<h2>Pick a memory.</h2>
+<p style="color:var(--muted)">You get to decide which part of us you see next.</p>
+<div class="grid">
+<button class="btn" data-go="s5"><div class="choice-title">💌 The thing I want to tell you</div><div class="choice-sub">Something from my heart</div></button>
+<button class="btn" data-go="s6"><div class="choice-title">📸 Our memories</div><div class="choice-sub">Four little snapshots of us</div></button>
+<button class="btn" data-go="s7"><div class="choice-title">🎵 Our song</div><div class="choice-sub">A song I picked for us</div></button>
+</div>
+</section>
+
+<section class="screen" id="s5">
+<div class="eyebrow">For my favourite kid</div>
+<h2>Open this when you're ready.</h2>
+<button class="envelope" data-go="s5open" aria-label="Open love letter">💌</button>
+<p style="color:var(--muted)">Tap the envelope.</p>
+</section>
+
+<section class="screen" id="s5open">
+<div class="eyebrow">A letter for Mehil</div>
+<div class="card letter">
+<p>My Mehil,</p>
+<p>Three years. ❤️</p>
+<p>And it still makes me smile that all of this started on one very random trip. I had no idea that a random beginning would become the person I would want beside me through everything.</p>
+<p>Long distance has never been the easiest part of our story. We meet after months, sometimes only for two or three days, and then we go back to missing each other all over again. But somehow, every little reunion makes every day apart worth it.</p>
+<p>You have loved me, spoiled me and cherished me in every possible way. You have somehow managed to fulfil practically every single thing I have ever asked you for. I try to give you the same love back, but honestly, I am pretty sure I will never be able to match everything you have given me.</p>
+<p>And then there is our favourite kind of ridiculous — being each other's chotu and motu. Me being your chotu, you being my motu, the silly voices, the acting like actual children, and somehow understanding exactly what the other one means. 😂</p>
+<p>I am genuinely, truly grateful that I found you. Out of all the people and all the possible lives, somehow I got you.</p>
+<p>If I could go back to that random trip knowing exactly where it would lead, I would still take it. I would still choose you. And I would choose you again and again — even with all the distance, all the waiting, and all the months between our little 2–3 day reunions.</p>
+<p>Happy 3rd Anniversary, my love. Here is to growing together, waiting for each other, spoiling each other, being each other's chotu and motu, and finding our way back to each other every single time.</p>
+<p style="text-align:right">Your chotu, always. ❤️<br>Sakhi</p>
+</div>
+<div class="grid"><button class="btn primary" data-go="s8">There's still one more thing…</button></div>
+</section>
+
+<section class="screen" id="s6">
+<img class="memories-collage" src="photos/memories-collage.jpg" alt="Sakhi and Mehil — Our Story">
+<div class="grid"><button class="btn" data-go="s4">Keep exploring →</button></div>
+</section>
+
+<section class="screen" id="s7">
+<div class="eyebrow">Our song</div>
+<h2>Lover ♡</h2>
+<p style="color:var(--muted)">I picked this one because it feels like a little promise to keep choosing each other.</p>
+<div class="card">
+<div style="font-size:70px">♪</div>
+<h3>Taylor Swift</h3>
+<p class="song-note">This is our song. Tap the button to open “Lover” by Taylor Swift in Apple Music. If you have the Apple Music app installed, your device can hand the link over to the app.</p>
+<a class="btn primary" id="musicTip" href="https://music.apple.com/us/song/lover/1468058173" target="_blank" rel="noopener noreferrer">♡ Play “Lover” on Apple Music</a>
+</div>
+<div class="grid"><button class="btn" data-go="s4">Keep exploring →</button></div>
+</section>
+
+<section class="screen" id="s8">
+<div class="eyebrow">Almost there, kid.</div>
+<div class="heart">♡</div>
+<h2>You thought that was everything?</h2>
+<p style="color:var(--muted)">Absolutely not. I know you better than that. 😌</p>
+<div class="grid"><button class="btn primary" data-go="s9">One final surprise →</button></div>
+</section>
+
+<section class="screen" id="s9">
+<div class="eyebrow">11 October • Happy Anniversary</div>
+<div class="heart">♥</div>
+<h1>If I had to<br>choose again…</h1>
+<p style="font-size:23px;line-height:1.8">I would still choose you.<br><em>Every. Single. Time.</em></p>
+<div class="card final-photo">
+<div class="photo"><img src="photos/memory-07.jpg" alt="Sakhi and Mehil together"></div>
+<h3>Happy Anniversary, Mehil. ❤️</h3>
+<p style="color:var(--muted)">Here's to our random beginning, three years of us, all the distance we have crossed, and all the chapters still waiting for us.</p>
+<p style="margin-bottom:0">Your kid, your partner, your person. ❤️</p>
+</div>
+</section>
+
+<script>
+(()=>{const app=document.getElementById('app');const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function go(id){app.querySelectorAll('.screen').forEach(s=>s.classList.toggle('active',s.id===id));window.scrollTo({top:0,behavior:reduce?'auto':'smooth'});}
+app.addEventListener('click',e=>{const b=e.target.closest('[data-go]');if(b)go(b.dataset.go);});
+
+})();
+</script>
+</main>
+</body>
+</html>
